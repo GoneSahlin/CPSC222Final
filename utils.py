@@ -35,7 +35,6 @@ def make_request(access_token, full_url):
 
     response = requests.get(url=full_url, headers=headers)
     json_object = json.loads(response.text)
-
     return json_object
 
 # create request url, make request, return JSON response
